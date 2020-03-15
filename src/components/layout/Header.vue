@@ -85,7 +85,6 @@ export default {
         text-decoration: underline;
         font-weight: bold;
         color:#E91E63;
-
     }
     .navbar a:hover {
         color:#E91E63;

@@ -42,9 +42,9 @@
             </p>
             <div class="btn">
               <p><strong><i class="fa fa-download" aria-hidden="true"></i> Татах</strong></p>
-              <a href="../../public/files/assign01_amraa.pdf" target="_blank" >Амартайван</a>
-              <a href="../../public/files/assign01_lhamaa.pdf" target="_blank" >Лхамсүрэн</a>
-              <a href="../../public/files/assign01_nyamaa.pdf" target="_blank" >Нямжанцан</a>
+              <a href="../../dist/files/assign01_amraa.pdf" target="_blank" >Амартайван</a>
+              <a href="../../dist/files/assign01_lhamaa.pdf" target="_blank" >Лхамсүрэн</a>
+              <a href="../../dist/files/assign01_nyamaa.pdf" target="_blank" >Нямжанцан</a>
             </div>
           </li>
         </ul>
