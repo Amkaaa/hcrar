@@ -18,10 +18,10 @@
           </div>
         </div>
         <div class="team-member">
-          <img src="../assets/profile/nyamaa.jpeg" alt="">
-          <h3>Э. Нямжанцан</h3>
-          <h4>Би энэ жил МУИС-н төгсөх курсийн оюутан. Би багаасаа дизайн график талдаа сонирхолтой байсан учраас бие дааж AR технологийг судалдаг. AR бол зүгээр л гайхамшиг.</h4>
-          <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> sstrby@gmail.com</h4>
+          <img src="../assets/profile/lhamaa.jpg" alt="">
+          <h3>Р. Лхамсүрэн</h3>
+          <h4>Өнөө цагийн технологийн дэвшил гэж юуг ойлгох вэ? гэвэл би AR-г хэлнэ. AR-н ачаар бид бодит ертөнцөд боломжгүй зүйлсийг боломжтой болгож чадаж байна.</h4>
+          <h4><i class="fa fa-envelope-o" aria-hidden="true"></i>chebrush21@gmail.com</h4>
           <div class="team-member-social">
             <a class="nonactive"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
             <a class="nonactive"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
@@ -29,10 +29,10 @@
           </div>
         </div>
         <div class="team-member">
-          <img src="../assets/profile/lhamaa.jpeg" alt="">
-          <h3>Р. Лхамсүрэн</h3>
-          <h4>Өнөө цагийн технологийн дэвшил гэж юуг ойлгох вэ? гэвэл би AR-г хэлнэ. AR-н ачаар бид бодит ертөнцөд боломжгүй зүйлсийг боломжтой болгож чадаж байна.</h4>
-          <h4><i class="fa fa-envelope-o" aria-hidden="true"></i>chebrush21@gmail.com</h4>
+          <img src="../assets/profile/nyamaa.jpeg" alt="">
+          <h3>Э. Нямжанцан</h3>
+          <h4>Би энэ жил МУИС-н төгсөх курсийн оюутан. Би багаасаа дизайн график талдаа сонирхолтой байсан учраас бие дааж AR технологийг судалдаг. AR бол зүгээр л гайхамшиг.</h4>
+          <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> sstrby@gmail.com</h4>
           <div class="team-member-social">
             <a class="nonactive"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
             <a class="nonactive"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
