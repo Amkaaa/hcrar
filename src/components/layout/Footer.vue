@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <img src="../../assets/img/icons_hololens.svg" alt="">
-        <p>&copy;2020 - HRCAR TEAM хөгжүүлэв. V1.0.0</p>
+        <p>&copy;2020 - HRCAR TEAM хөгжүүлэв. V2.0.0</p>
     </div>
 </template>
 

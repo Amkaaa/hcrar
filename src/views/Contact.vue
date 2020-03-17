@@ -14,10 +14,10 @@
               14201 Улаанбаатар хот-46а ш/х-600
               <!-- Сүхбаатар дүүрэг, Их Сургуулийн гудамж, 3-р байр -->
               </h3>
-            <h3 class="website"><i class="fa fa-globe" aria-hidden="true"></i><a href="/">www.mysite.mn</a></h3>
-            <h3 class="email"><i class="fa fa-envelope" aria-hidden="true"></i>hrarc@gmail.com</h3>
+            <h3 class="website"><i class="fa fa-globe" aria-hidden="true"></i><a href="/">https://humancomputer.me/</a></h3>
+            <h3 class="email"><i class="fa fa-envelope" aria-hidden="true"></i>99061017a@gmail.com</h3>
             <h3 class="trello"><i class="fa fa-trello" aria-hidden="true"></i>Not Available Now</h3>
-            <h3 class="phone"><i class="fa fa-phone-square" aria-hidden="true"></i>Not Available Now</h3>
+            <h3 class="phone"><i class="fa fa-phone-square" aria-hidden="true"></i>+(976) 95829514</h3>
         </div>
     </div>
     <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270" >
