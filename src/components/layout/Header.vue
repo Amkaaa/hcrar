@@ -7,11 +7,10 @@
         </div>
         </a>
         <div class="navbar">
-            <div class="main" v-on:click="change" v-class="{active: isActive}"> 
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+
             <div class="navbar-link">
                 <span class="home">
                     <img src="../../assets/img/icons8-augmented-reality-64.png">
@@ -33,30 +32,71 @@ export default {
 </script>
 
 <style lang="css" scoped>
-    .main{
-        position: absolute;
-        right: 20px;
-        display: inline-block;
+
+    .navbar .navbar-link {
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+
+    .navbar .menu-icon {
         cursor: pointer;
-    }
-    .bar1, .bar2, .bar3 {
-        width: 30px;
-        height: 4px;
-        background-color: #333;
-        margin: 5px 0;
-        transition: 0.4s;
-    }
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
     }
 
-    .change .bar2 {opacity: 0;}
-
-    .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
+    .navbar .menu-icon .nav-icon {
+        background: #333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
     }
+
+    .navbar .menu-icon .nav-icon:before,
+    .navbar .menu-icon .nav-icon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    .navbar .menu-icon .nav-icon:before {
+        top: 5px;
+    }
+
+    .navbar .menu-icon .nav-icon:after {
+        top: -5px;
+    }
+
+    /* menu btn */
+
+    .navbar .menu-btn {
+        display: none;
+    }
+
+    .navbar .menu-btn:checked ~ .navbar-link {
+        max-height: 240px;
+    }
+
+    .navbar .menu-btn:checked ~ .menu-icon .nav-icon {
+        background: transparent;
+    }
+
+    .navbar .menu-btn:checked ~ .menu-icon .nav-icon:before {
+        transform: rotate(-45deg);
+        top:0;
+    }
+
+    .navbar .menu-btn:checked ~ .menu-icon .nav-icon:after {
+        transform: rotate(45deg);
+        top:0;
+    }
+
     a{
         text-decoration: none;
         color: #111;
@@ -82,6 +122,9 @@ export default {
         align-items: center;
         margin-left: auto;
     }
+    .navbar .navbar-link {
+        overflow: hidden;
+    }
     .navbar img{
         width: 25px;
         height: 25px;
@@ -90,7 +133,7 @@ export default {
     .home:hover{
         cursor: pointer;
     }
-    .navbar a {
+    .navbar .navbar-link a{
         text-decoration: none;
         color: black;
         font-family: 'Roboto Condensed', sans-serif;
@@ -109,7 +152,7 @@ export default {
         transform: translateY(-5px);
     }
 
-        /* Extra small devices (phones, 600px and down) */
+    /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
         .header {
         height: 50px;
@@ -209,11 +252,11 @@ export default {
             margin-left: 15px;
             transition: ease-out 0.5s;
         }
-        .main {
-            display: none;
-        }
         .navbar-link {
             display: inline-block;
+        }
+        .navbar .menu-icon {
+            display: none;
         }
     } 
 
@@ -247,9 +290,6 @@ export default {
             margin-left: 20px;
             transition: ease-out 0.5s;
         }
-        .main {
-            display: none;
-        }
         .navbar-link {
             display: inline-block;
         }
@@ -258,9 +298,6 @@ export default {
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
         
-        .main {
-            display: none;
-        }
         .navbar-link {
             display: inline-block;
         }

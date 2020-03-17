@@ -106,4 +106,119 @@ export default {
       to   { transform: translate(0, -0px); }    
   }
 
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .contact {
+      grid-template-areas: "us" "sidebar";
+      min-height: calc(100vh - 95px);
+    }
+    .contact-sidebar{
+      margin-top: -350px;
+      margin-left: 300px;
+    }
+    .contact-sidebar img{
+      width: 150px;
+      height: 150px;
+    }
+    .floating {
+      width: 150px;
+    }
+    svg {
+      bottom: 40px;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .contact {
+      grid-template-areas: "us" "sidebar";
+      min-height: calc(100vh - 95px);
+    }
+    .contact-sidebar{
+      margin-top: -350px;
+      margin-left: 300px;
+    }
+    .contact-sidebar img{
+      width: 150px;
+      height: 150px;
+    }
+    .floating {
+      width: 150px;
+    }
+    svg {
+      bottom: 40px;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .contact {
+      grid-template-areas: "sidebar us us" 
+                            "sidebar us us";
+      min-height: calc(100vh - 115px);
+    }
+    .contact-sidebar{
+      margin-top: -100px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .contact-sidebar img{
+      width: 300px;
+      height: 300px;
+    }
+    .floating {
+      width: 300px;
+    }
+    svg {
+      bottom: 40px;
+    }
+  } 
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .contact {
+      grid-template-areas: "sidebar us us" 
+                            "sidebar us us";
+      min-height: calc(100vh - 115px);
+    }
+    .contact-sidebar{
+      margin-top: -100px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .contact-sidebar img{
+      width: 350px;
+      height: 350px;
+    }
+    .floating {
+      width: 300px;
+    }
+    svg {
+      bottom: 40px;
+    }
+  } 
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .contact {
+      grid-template-areas: "sidebar us us" 
+                            "sidebar us us";
+      min-height: calc(100vh - 115px);
+    }
+    .contact-sidebar{
+      margin-top: -100px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .contact-sidebar img{
+      width: 400px;
+      height: 400px;
+    }
+    .floating {
+      width: 300px;
+    }
+    svg {
+      bottom: 40px;
+    }
+  }
 </style>

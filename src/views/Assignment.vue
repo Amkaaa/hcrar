@@ -23,7 +23,7 @@
             
             <div class="btn">
               <a href="" download>Татаx</a>
-              <a href="About" target="_blank">Үзэх</a>
+              <a href="" target="_blank">Үзэх</a>
             </div>
           </li>
         </ul>
@@ -66,9 +66,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
-
 export default {
   name: 'Assignment',
   components: {
@@ -205,4 +202,130 @@ export default {
     .assign-reference a:hover{
       color: #E91E63;
     }
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      .assignment {
+        grid-template-areas: "description" "sidebar" "presentataion" "assignment" "reference";
+      }
+      .assign-description{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .assign-sidebar img{
+        width: 200px;
+        height: 200px;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .assignment {
+        grid-template-areas: "description" "sidebar" "presentataion" "assignment" "reference";
+      }
+      .assign-description{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .assign-sidebar img{
+        width: 300px;
+        height: 300px;
+      }
+      p {
+        font-size: 1.4em;
+      }
+      .fa-download{
+        margin-top: 50px;
+      }
+      h5{
+        float: right;
+        font-size: 1.2em;
+        padding-top:10px;
+        margin: 0;
+      }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      .assignment {
+        grid-template-areas: "description description" 
+                             "sidebar sidebar" 
+                             "presentataion assignment" 
+                             "reference assignment";
+      }
+      .assign-sidebar img{
+        width: 300px;
+        height: 300px;
+      }
+      p {
+        font-size: 1.4em;
+      }
+      .fa-download{
+        margin-top: 50px;
+      }
+      h5{
+        float: right;
+        font-size: 1.2em;
+        padding-top:10px;
+        margin: 0;
+      }
+    } 
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      .assignment {
+        grid-template-areas: "description description sidebar"
+                             "presentataion assignment sidebar"
+                             "reference . .";
+      }
+      .assign-description{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .assign-sidebar img{
+        width: 300px;
+        height: 300px;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      .fa-download{
+        margin-top: 0px;
+      }
+      h5{
+        float: right;
+        font-size: 1.2em;
+        padding-top:10px;
+        margin: 0;
+      }
+    } 
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      .assignment {
+        grid-template-areas: "description description sidebar"
+                             "presentataion assignment sidebar"
+                             "reference . .";
+      }
+      .assign-description{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .assign-sidebar img{
+        width: 300px;
+        height: 300px;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      h5{
+        float: right;
+        font-size: 1.2em;
+        padding-top:10px;
+        margin: 0;
+      }
+    }
+
 </style>

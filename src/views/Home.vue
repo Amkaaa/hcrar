@@ -40,6 +40,7 @@ export default {
 <style scoped>
   .home{
     font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
   }
   .section{
     background-color: #9B59B6;
@@ -156,6 +157,7 @@ export default {
       display: none;
     }
     .section{
+      width: 100%;
       grid-template-areas: "article" "img";
       justify-content: center;
     }
@@ -185,14 +187,14 @@ export default {
       margin-left: 100px;
     }
     .home-goal article {
-      width: 400px;
+      width: 300px;
       margin-right: auto;
       margin-left: auto;
     }
     .home-goal img {
       grid-row: 1/3;
       grid-column: 2;
-      height: 400px;
+      height: 300px;
       margin-top: 200px;
       margin-bottom: 50px;
       display: none;
@@ -201,11 +203,11 @@ export default {
       font-size: 1.4em;
     }
     .home-goal article p{
-      width: 400px;
+      width: 300px;
       font-size: 1em;
     }
     iframe{
-      height: 250px;
+      height: 200px;
       margin-bottom: 20px;
     }
   }
@@ -361,7 +363,7 @@ export default {
     .section img {
       grid-area: img;
       height: 400px;
-      margin-right: 100px;
+      margin-right: 70px;
     }
     .section article{
       grid-area: article;

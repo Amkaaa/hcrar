@@ -136,4 +136,138 @@ export default {
       opacity: 0.5;
       user-select: none;
     }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      .about {
+        grid-template-areas: "us"
+                             "team ";
+      }
+      .about-sidebar{
+        display: none;
+      }
+      .about-team{
+        flex-direction: column;
+        text-align: center;
+        justify-self: center;
+      }
+      .about-team .team-member{
+        margin: 15px 0;
+        height: 415px;
+        width: 250px;
+      }
+      p {
+        margin: 0 20px 0 20px;
+        font-size: 1.2em;
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .about {
+        grid-template-areas: "us"
+                             "team ";
+      }
+      .about-sidebar{
+        display: none;
+      }
+      .about-team{
+        flex-direction: column;
+        text-align: center;
+        justify-self: center;
+      }
+      .about-team .team-member{
+        margin: 15px 0;
+        height: 415px;
+        width: 300px;
+      }
+      p {
+        margin: 0 40px 0 40px;
+        font-size: 1.4em;
+      }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      .about {
+        grid-template-areas: "us" "sidebar"
+                             "team";
+      }
+      .about-sidebar{
+        display: inline-block;
+      }
+      .about-team{
+        flex-direction: row;
+        flex-flow: wrap;
+        text-align: center;
+        justify-self: center;
+        justify-content: space-evenly;
+        padding: 0;
+      }
+      .about-team .team-member{
+        margin: 30px 0;
+        height: 415px;
+        width: 300px;
+      }
+      p {
+        margin: 0 50px 0 50px;
+        font-size: 1.4em;
+      }
+    } 
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      .about {
+        grid-template-areas: "us" "team"
+                             "sidebar";
+      }
+      .about-sidebar{
+        display: inline-block;
+      }
+      .about-team{
+        margin-top: 20px;
+        flex-direction: row;
+        text-align: center;
+        justify-self: center;
+        padding: 0;
+      }
+      .about-team .team-member{
+        margin: 0 15px;
+        height: 415px;
+        width: 300px;
+      }
+      p {
+        margin: 0 50px 0 50px;
+        font-size: 1.4em;
+      }
+    } 
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      .about {
+        grid-template-areas: "sidebar us us"
+                             "sidebar team team "
+                             "sidebar team team";
+      }
+      .about-sidebar{
+        display: inline-block;
+      }
+      .about-team{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0px 0px;
+        grid-area: team;  
+        flex-direction: row;
+        text-align: center;
+      }
+      .about-team .team-member{
+        height: 415px;
+        width: 250px;
+        margin-bottom: 20px;
+      }
+      p {
+        margin: 0 50px 0 50px;
+        font-size: 1.2em;
+      }
+    }
 </style>
