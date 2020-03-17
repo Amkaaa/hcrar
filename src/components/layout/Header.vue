@@ -252,8 +252,10 @@ export default {
             margin-left: 15px;
             transition: ease-out 0.5s;
         }
-        .navbar-link {
-            display: inline-block;
+        .navbar .navbar-link {
+            clear: none;
+            float: right;
+            max-height: none;
         }
         .navbar .menu-icon {
             display: none;
@@ -290,6 +292,11 @@ export default {
             margin-left: 20px;
             transition: ease-out 0.5s;
         }
+        .navbar .navbar-link {
+            clear: none;
+            float: right;
+            max-height: none;
+        }
         .navbar-link {
             display: inline-block;
         }
@@ -298,6 +305,14 @@ export default {
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
         
+        .navbar-link {
+            display: inline-block;
+        }
+        .navbar .navbar-link {
+            clear: none;
+            float: right;
+            max-height: none;
+        }
         .navbar-link {
             display: inline-block;
         }
