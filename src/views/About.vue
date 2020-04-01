@@ -235,6 +235,7 @@ export default {
         margin: 0 15px;
         height: 415px;
         width: 300px;
+        margin-top: 20px;
       }
       p {
         margin: 0 50px 0 50px;

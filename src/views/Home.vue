@@ -5,12 +5,12 @@
       <article>
         <h1>AR ЕРТӨНЦӨД ТАВТАЙ МОРИЛ</h1>
         <p>Augmented Reality буюу AR гэдэг нь програм хангамжийн тусламжтай бүтээгдсэн аливаа графикийг бодит байдалтай хослуулсан хагас бодит орчин юм. AR нь Virtual Reality-гийн хөгжлийн дараагийн үе шат юм</p>
-        <button>Цааш үзэх</button>
+        <a href="#ourGoal" class="button">Цааш үзэх</a>
       </article>
     </div>
     <div class="floating"><img src="../assets/img/vr.png" alt=""></div>
     <div class="home-goal">
-      <article>
+      <article id="ourGoal">
         <h1>Бидний зорилго</h1>
         <p>Энэхүү семинарын ажлын хүрээнд VR, түүнд ашиглагдаж буй
         техник технологи, програм хангамжийг бие даан судалж, практик
@@ -76,15 +76,16 @@ export default {
     color: #ffffff;
     font-size: 1.2em;
   }
-  .section article button{
+  .section article .button{
     background-color: #E91E63;
+    text-decoration: none;
     border-radius: 25px;
     border: none;
     color: #ffffff;
     padding: 10px 20px;
     float: right;
   }
-  button:hover{
+  .button:hover{
     cursor: pointer;
     animation: animate 1s infinite;
     transition: ease-in-out 0.5s;
@@ -182,7 +183,7 @@ export default {
       color: #ffffff;
       font-size: 1em;
     }
-    .section article button{
+    .section article .button{
       float: left;
       margin-left: 100px;
     }
@@ -242,7 +243,7 @@ export default {
       color: #ffffff;
       font-size: 1.1em;
     }
-    .section article button{
+    .section article .button{
       float: left;
       margin-left: 150px;
     }
@@ -305,7 +306,7 @@ export default {
       color: #ffffff;
       font-size: 1.2em;
     }
-    .section article button{
+    .section article .button{
       float: right;
     }
     .home-goal{
@@ -354,7 +355,7 @@ export default {
       display: inline-block;
     }
     .floating img {
-      width: 400px;
+      width: 340px;
     }
     .section{
       grid-template-areas: "img article";
@@ -381,7 +382,7 @@ export default {
       color: #ffffff;
       font-size: 1.2em;
     }
-    .section article button{
+    .section article .button{
       float: right;
     }
     .home-goal{
@@ -419,6 +420,9 @@ export default {
       font-size: 1.2em;
     }
     iframe{
+      width: calc(100% - 50px);
+      margin-right: auto;
+      margin-left: auto;
       height: 350px;
       margin-bottom: 20px;
     }

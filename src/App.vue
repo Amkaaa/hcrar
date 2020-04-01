@@ -19,6 +19,9 @@ export default {
 </script>
 
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
   body{
     margin: 0;
     padding: 0;

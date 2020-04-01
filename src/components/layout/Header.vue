@@ -37,6 +37,10 @@ export default {
         max-height: 0;
         transition: max-height .2s ease-out;
     }
+    
+    #menu-btn:checked ~ .navbar-link {
+        right: 0;
+    }
 
     .navbar .menu-icon {
         cursor: pointer;
@@ -44,13 +48,15 @@ export default {
         padding: 28px 20px;
         position: relative;
         user-select: none;
+        margin-right: 20px;
     }
 
     .navbar .menu-icon .nav-icon {
         background: #333;
         display: block;
         height: 2px;
-        position: relative;
+        position: fixed;
+        z-index: 100;
         transition: background .2s ease-out;
         width: 18px;
     }
@@ -80,7 +86,7 @@ export default {
     }
 
     .navbar .menu-btn:checked ~ .navbar-link {
-        max-height: 240px;
+        max-height: 100vh;
     }
 
     .navbar .menu-btn:checked ~ .menu-icon .nav-icon {
@@ -89,11 +95,13 @@ export default {
 
     .navbar .menu-btn:checked ~ .menu-icon .nav-icon:before {
         transform: rotate(-45deg);
+        background: #FFFFFF;
         top:0;
     }
 
     .navbar .menu-btn:checked ~ .menu-icon .nav-icon:after {
         transform: rotate(45deg);
+        background: #FFFFFF;
         top:0;
     }
 
@@ -130,8 +138,10 @@ export default {
         height: 25px;
         vertical-align: middle;
     }
-    .home:hover{
+    .navbar .home:hover{
         cursor: pointer;
+        transition: ease-in 0.5s;
+        transform: translateY(-5px);
     }
     .navbar .navbar-link a{
         text-decoration: none;
@@ -183,7 +193,32 @@ export default {
             transition: ease-out 0.5s;
         }
         .navbar-link {
-            display: none;
+            position: fixed;
+            width: 50%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            right: -100%;
+            top: 0;
+            text-align: center;
+            padding: 80px 0;
+            line-height: 2.5;
+            transition: 0.7s;
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+        }
+        .navbar a {
+            color: #FFFFFF !important;
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .navbar a.active{
+            color:#E91E63 !important;
+        }
+        .home:hover,
+        .navbar a:hover{
+            color: #E91E63 !important;
+            background: rgba(0, 0, 0, 0.5);
         }
     }
 
@@ -218,7 +253,32 @@ export default {
             transition: ease-out 0.5s;
         }
         .navbar-link {
-            display: none;
+            position: fixed;
+            width: 50%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            right: -100%;
+            top: 0;
+            text-align: center;
+            padding: 80px 0;
+            line-height: 2.5;
+            transition: 0.7s;
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+        }
+        .navbar a {
+            color: #FFFFFF !important;
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .navbar a.active{
+            color:#E91E63 !important;
+        }
+        .home:hover,
+        .navbar a:hover{
+            color: #E91E63 !important;
+            background: rgba(0, 0, 0, 0.5);
         }
     }
 
@@ -257,8 +317,38 @@ export default {
             float: right;
             max-height: none;
         }
+        .navbar-link {
+            display: inline-block;
+        }
         .navbar .menu-icon {
             display: none;
+        }
+        .navbar-link {
+            position: relative;
+            width: 100%;
+            height: 40px;
+            background: #FFFFFF;
+            right: 0;
+            top: 0;
+            text-align: center;
+            padding: 0;
+            line-height: 2.5;
+            transition: 0.7s;
+            display: block;
+            z-index: 10;
+        }
+        .navbar a {
+            color: #000 !important;
+            font-size: 1em;
+            margin-left: 10px;
+        }
+        .navbar a.active{
+            color:#E91E63 !important;
+        }
+        .home:hover,
+        .navbar a:hover{
+            color: #E91E63 !important;
+            background: #FFFFFF;
         }
     } 
 

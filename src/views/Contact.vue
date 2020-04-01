@@ -12,11 +12,11 @@
             <h3 class="contact-address"><i class="fa fa-location-arrow" aria-hidden="true"></i>
               МУИС ХШУИС, 
               14201 Улаанбаатар хот-46а ш/х-600
-              <!-- Сүхбаатар дүүрэг, Их Сургуулийн гудамж, 3-р байр -->
               </h3>
+            <h3 class="contact-address" style="margin-left: 50px;">Сүхбаатар дүүрэг, Их Сургуулийн гудамж, 3-р байр</h3>
             <h3 class="website"><i class="fa fa-globe" aria-hidden="true"></i><a href="/">https://humancomputer.me/</a></h3>
             <h3 class="email"><i class="fa fa-envelope" aria-hidden="true"></i>99061017a@gmail.com</h3>
-            <h3 class="trello"><i class="fa fa-trello" aria-hidden="true"></i>Not Available Now</h3>
+            <h3 class="trello"><i class="fa fa-trello" aria-hidden="true"></i>Trello</h3>
             <h3 class="phone"><i class="fa fa-phone-square" aria-hidden="true"></i>+(976) 95829514</h3>
         </div>
     </div>
@@ -60,10 +60,11 @@ export default {
   }
   .contact-us{
     grid-area: us;
-    justify-self: center;
+    justify-self: flex-start;
+    margin-left: 10px;
     width: 450px;
     text-align: justify;
-    z-index: 999;
+    z-index: 0;
   }
   .contact-sidebar img{
     width: 400px;
@@ -82,10 +83,6 @@ export default {
   h3 {
     color: #ffffff;
     font-weight: 100;
-  }
-  a {
-    /* color: white;
-    text-decoration: none; */
   }
   a:hover{
     opacity: 0.8;
