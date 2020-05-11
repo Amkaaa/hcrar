@@ -22,8 +22,23 @@
             </p>
             
             <div class="btn">
-              <a href="" download>Татаx</a>
-              <a href="" target="_blank">Үзэх</a>
+              <a href="../../files/augmented-reality-p1.pptx" download>Татаx</a>
+              <a href="../../files/augmented-reality-p1.pptx" download target="_blank">Үзэх</a>
+            </div>
+          </li>
+          <li>
+            <h4>Товч танилцуулга</h4>
+            
+            <img src="../assets/img/slideshare-brands.svg" alt="">
+            <h5>Судалгааны ажил  №2</h5>
+              
+            <p>
+              Augmented Reality-ийн тухай бодит хэрэглээ болон түүнийг ашиглаж ямар бүтээл хийх тухай судалгааны ажил.
+            </p>
+            
+            <div class="btn">
+              <a href="../../files/augmented-reality-p2.pptx" download>Татаx</a>
+              <a href="../../files/augmented-reality-p2.pptx" download target="_blank">Үзэх</a>
             </div>
           </li>
         </ul>
@@ -58,9 +73,9 @@
             </p>
             <div class="btn">
               <p><strong><i class="fa fa-download" aria-hidden="true"></i> Татах</strong></p>
-              <a href="../../files/assign01_amraa.pdf" target="_blank" >Амартайван</a>
-              <a href="../../files/assign01_lhamaa.pdf" target="_blank" >Лхамсүрэн</a>
-              <a href="../../files/assign01_nyamaa.pdf" target="_blank" >Нямжанцан</a>
+              <a href="../../files/lab02_amraa.pdf" target="_blank" >Амартайван</a>
+              <a href="../../files/lab02_lhamaa.pdf" target="_blank" >Лхамсүрэн</a>
+              <a href="../../files/lab02_nyamaa.pdf" target="_blank" >Нямжанцан</a>
             </div>
           </li>
         </ul>
