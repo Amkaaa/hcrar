@@ -22,8 +22,8 @@
             </p>
             
             <div class="btn">
-              <a href="../../files/augmented-reality-p1.pptx" download>Татаx</a>
-              <a href="../../files/augmented-reality-p1.pptx" download target="_blank">Үзэх</a>
+              <a href="../../files/presentation1.pdf" download>Татаx</a>
+              <a href="../../files/presentation1.pdf" download target="_blank">Үзэх</a>
             </div>
           </li>
           <li>
@@ -37,8 +37,8 @@
             </p>
             
             <div class="btn">
-              <a href="../../files/augmented-reality-p2.pptx" download>Татаx</a>
-              <a href="../../files/augmented-reality-p2.pptx" download target="_blank">Үзэх</a>
+              <a href="../../files/presentation2.pdf" download>Татаx</a>
+              <a href="../../files/presentation2.pdf" download target="_blank">Үзэх</a>
             </div>
           </li>
         </ul>
